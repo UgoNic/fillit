@@ -5,20 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: unicolai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/29 14:38:51 by unicolai          #+#    #+#             */
-/*   Updated: 2017/11/29 14:39:10 by unicolai         ###   ########.fr       */
+/*   Created: 2017/11/29 14:41:02 by unicolai          #+#    #+#             */
+/*   Updated: 2017/11/29 15:02:22 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-t_list	tetri();
+#include "fillit.h"
 
-int		ft_strlen(char *s);
+t_list  tetri();
 
-int		ft_sqrt(int n);
+int     ft_strlen(char *s);
 
-char	*newmap(char *map)
+int     ft_sqrt(int n);
+
+char    *newmap(char *map)
 {
-	int	i;
+	int i;
 
 	i = ft_strlen(map);
 	i = ft_sqrt(i);
@@ -28,10 +30,10 @@ char	*newmap(char *map)
 	return (map);
 }
 
-void	fillcube(char *map, t_list tetri)
+void    fillcube(char *map, t_list tetri)
 {
-	int	i;
-	int	j;
+	int i;
+	int j;
 
 	i = 0;
 	j = 0;
@@ -52,5 +54,4 @@ void	fillcube(char *map, t_list tetri)
 	i = 0;
 	j = 0;
 }
-
 
