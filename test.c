@@ -6,11 +6,11 @@
 /*   By: unicolai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/24 16:49:44 by unicolai          #+#    #+#             */
-/*   Updated: 2017/12/24 17:19:04 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/25 17:47:36 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "includes/fillit.h"
 
 int		main()
 {
@@ -68,11 +68,6 @@ int		main()
 	printf("%s\n", map);
 	ft_fill_map(&map, tabtetri);
 	i = 0;
-	while (tabtetri[i].s != NULL)
-	{
-		printf("tabtetri[%d].x = %d, tabtetri[%d].y = %d\n", i, tabtetri[i].x, i, tabtetri[i].y);
-		i++;
-	}
 	printf("%s\n", map);
 	return (0);
 }

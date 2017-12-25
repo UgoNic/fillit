@@ -6,11 +6,11 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/29 18:24:56 by jjaniec           #+#    #+#             */
-/*   Updated: 2017/12/20 19:55:28 by jjaniec          ###   ########.fr       */
+/*   Updated: 2017/12/25 17:53:09 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 int		ft_distribute_tetriminos(t_tetri **tab, char *s)
 {

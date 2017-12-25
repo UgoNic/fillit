@@ -6,11 +6,11 @@
 /*   By: unicolai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/29 23:09:37 by unicolai          #+#    #+#             */
-/*   Updated: 2017/12/20 20:02:37 by jjaniec          ###   ########.fr       */
+/*   Updated: 2017/12/25 21:29:13 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 int		main(int ac, char **av)
 {
@@ -23,7 +23,7 @@ int		main(int ac, char **av)
 		return (ft_print_usage());
 	fd = open(av[1], O_RDONLY);
 	s = ft_read_content(fd);
-	if (ft_pass_tests(s))
+	if (ft_pass_tests(s) == 1)
 		return (1);
 	ft_distribute_tetriminos(&tab, s);
 	map = ft_generate_map(ft_fillit_sqrt(ft_count_tetris(s) * 4));

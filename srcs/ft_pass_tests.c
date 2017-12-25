@@ -6,11 +6,11 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/20 19:24:17 by jjaniec           #+#    #+#             */
-/*   Updated: 2017/12/20 19:52:51 by jjaniec          ###   ########.fr       */
+/*   Updated: 2017/12/25 21:28:31 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 int		ft_pass_tests(char *file_content)
 {
@@ -27,11 +27,11 @@ int		ft_pass_tests(char *file_content)
 	while (j != i && r != 1)
 	{
 		t_tmp = ft_parse_tetri(file_content, j);
-		if (
-				ft_errordot(t_tmp) || \
-				ft_errorhashtag(t_tmp)
-			)
+		if (ft_errordot(t_tmp) == 1 || ft_errorhashtag(t_tmp) == 1)
+		{
 			r = 1;
+			return (r);
+		}
 		j++;
 	}
 	if (r)

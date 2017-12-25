@@ -6,11 +6,11 @@
 /*   By: unicolai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/24 16:19:05 by unicolai          #+#    #+#             */
-/*   Updated: 2017/12/24 17:13:20 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/25 17:54:29 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 static void	enlargemap(int *j, char **map, int *result)
 {

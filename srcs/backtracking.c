@@ -6,11 +6,11 @@
 /*   By: unicolai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/24 16:18:31 by unicolai          #+#    #+#             */
-/*   Updated: 2017/12/24 17:05:49 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/25 17:55:51 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 static int	ft_skip_dot_allready_taken(char *map, int *result, int *onemore)
 {

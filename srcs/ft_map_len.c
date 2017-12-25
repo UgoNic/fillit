@@ -6,11 +6,11 @@
 /*   By: unicolai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/24 16:39:07 by unicolai          #+#    #+#             */
-/*   Updated: 2017/12/24 16:39:52 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/25 17:54:12 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 int		ft_map_len(char *map)
 {

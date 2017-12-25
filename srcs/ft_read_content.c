@@ -6,11 +6,11 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/28 15:16:18 by jjaniec           #+#    #+#             */
-/*   Updated: 2017/11/30 15:14:01 by jjaniec          ###   ########.fr       */
+/*   Updated: 2017/12/25 17:55:13 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 char	*ft_resize_buf(int fd, char *buf, int *bufsize_multiplier, int *wrote)
 {
