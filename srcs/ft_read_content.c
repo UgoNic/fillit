@@ -6,23 +6,24 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/28 15:16:18 by jjaniec           #+#    #+#             */
-/*   Updated: 2017/11/30 15:14:01 by jjaniec          ###   ########.fr       */
+/*   Updated: 2017/12/26 17:11:34 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 char	*ft_resize_buf(int fd, char *buf, int *bufsize_multiplier, int *wrote)
 {
 	char	*buf2;
 
-	buf2 = (char *)malloc(sizeof(char) * BUFF_SIZE * *bufsize_multiplier + 1);
-	*wrote = read(fd, buf2, (BUFF_SIZE * *bufsize_multiplier));
+	if (!(buf2 = (char *)malloc(sizeof(char) *
+	21 * *bufsize_multiplier + 1)))
+		return (NULL);
+	*wrote = read(fd, buf2, (21 * *bufsize_multiplier));
 	buf2[*wrote] = '\0';
 	*bufsize_multiplier += 1;
 	return (ft_strjoin(buf, buf2));
 }
-
 
 char	*ft_read_content(int fd)
 {
@@ -31,10 +32,11 @@ char	*ft_read_content(int fd)
 	int		multiplier;
 
 	multiplier = 1;
-	buf = (char *)malloc(sizeof(char) * BUFF_SIZE + 1);
-	x = read(fd, buf, BUFF_SIZE);
-	buf[x] ='\0';
-	if (x < BUFF_SIZE)
+	if (!(buf = (char *)malloc(sizeof(char) * 21 + 1)))
+		return (NULL);
+	x = read(fd, buf, 21);
+	buf[x] = '\0';
+	if (x < 21)
 		return (buf);
 	while (x > 0)
 		buf = ft_resize_buf(fd, buf, &multiplier, &x);

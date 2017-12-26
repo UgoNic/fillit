@@ -6,7 +6,7 @@
 #    By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/20 20:31:14 by jjaniec           #+#    #+#              #
-#    Updated: 2017/12/20 20:38:13 by jjaniec          ###   ########.fr        #
+#    Updated: 2017/12/26 15:47:10 by unicolai         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ SRC_NAME = backtracking.c \
 		   ft_print_usage.c \
 		   ft_read_content.c \
 		   ft_upleft.c \
+		   ft_check_tetri_len.c \
 		   main.c
 
 SRC_DIR = ./srcs/
@@ -52,9 +53,6 @@ $(NAME) : $(OBJ) map
 $(OBJ_DIR)%.o : $(SRC_DIR)%.c
 	@mkdir -p $(OBJ_DIR)
 	gcc $(CFLAGS) -c $(IFLAGS) $^ -o $@
-
-map:
-	./map_generator $(T_COUNT)
 
 clean:
 	rm -f $(OBJ)

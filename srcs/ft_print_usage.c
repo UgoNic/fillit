@@ -6,11 +6,11 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/20 19:58:44 by jjaniec           #+#    #+#             */
-/*   Updated: 2017/12/20 20:02:06 by jjaniec          ###   ########.fr       */
+/*   Updated: 2017/12/25 17:55:01 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 int		ft_print_usage(void)
 {

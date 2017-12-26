@@ -6,11 +6,11 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 16:36:04 by jjaniec           #+#    #+#             */
-/*   Updated: 2017/12/20 17:49:18 by jjaniec          ###   ########.fr       */
+/*   Updated: 2017/12/25 17:54:00 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 /*
 ** Generate a map in a char * to place tetriminos

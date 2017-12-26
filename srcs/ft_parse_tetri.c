@@ -6,11 +6,11 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/29 15:47:50 by jjaniec           #+#    #+#             */
-/*   Updated: 2017/12/20 18:31:53 by jjaniec          ###   ########.fr       */
+/*   Updated: 2017/12/25 17:54:39 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 char	*ft_parse_tetri(char *s, int nb)
 {

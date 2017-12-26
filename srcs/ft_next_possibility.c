@@ -6,11 +6,11 @@
 /*   By: unicolai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/24 16:19:05 by unicolai          #+#    #+#             */
-/*   Updated: 2017/12/24 17:13:20 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/26 11:22:29 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 static void	enlargemap(int *j, char **map, int *result)
 {
@@ -26,7 +26,7 @@ static void	enlargemap(int *j, char **map, int *result)
 		exit(EXIT_FAILURE);
 	i = 0;
 	i2 = 0;
-	while (i <= (newnbl - 1)  * (newnbl - 1))
+	while (i <= (newnbl - 1) * (newnbl - 1))
 	{
 		while (i2 < newnbl - 1)
 		{
@@ -62,7 +62,7 @@ static int	endofmap(char *map, t_tetri *tabtetri, int j)
 	int	endoftetri;
 
 	k = -1;
-	firststar = SUCCESS;;
+	firststar = SUCCESS;
 	positionletter = 0;
 	endoftetri = ERROR;
 	while (tabtetri[j].s[++k])
@@ -96,22 +96,23 @@ static void	remove_last_tetri(char **map, int *j)
 	}
 }
 
-int		ft_next_possibility(char **map, t_tetri **tabtetri, int *j, int *onemore)
+int			ft_next_possibility(char **map, t_tetri **tabtetri,
+			int *j, int *onemore)
 {
 	int	result;
 
 	result = ERROR;
-	if (endofmap(*map, *tabtetri, *j) == SUCCESS)//
-	{//
-		(*tabtetri)[*j].decaltetri = 0;//
+	if (endofmap(*map, *tabtetri, *j) == SUCCESS)
+	{
+		(*tabtetri)[*j].decaltetri = 0;
 		remove_last_tetri(map, j);
-		if (*j != 0)//
+		if (*j != 0)
 			(*tabtetri)[*j].decaltetri += firsthashtag(*tabtetri, *j);
-	}//
+	}
 	remove_last_tetri(map, j);
 	*j >= 0 ? (*tabtetri)[*j].decaltetri++ : 0;
-	*onemore = (*tabtetri)[*j].decaltetri;//
-	if (*j == -1)//
+	*onemore = (*tabtetri)[*j].decaltetri;
+	if (*j == -1)
 		enlargemap(j, map, &result);
 	return (result);
 }

@@ -6,11 +6,11 @@
 /*   By: unicolai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/24 17:08:20 by unicolai          #+#    #+#             */
-/*   Updated: 2017/12/24 17:08:39 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/26 11:01:38 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 int		ft_fillit_sqrt(int n)
 {
@@ -21,4 +21,3 @@ int		ft_fillit_sqrt(int n)
 		++res;
 	return (res);
 }
-

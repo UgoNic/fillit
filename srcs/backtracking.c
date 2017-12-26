@@ -6,11 +6,11 @@
 /*   By: unicolai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/24 16:18:31 by unicolai          #+#    #+#             */
-/*   Updated: 2017/12/24 17:05:49 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/26 11:19:57 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 static int	ft_skip_dot_allready_taken(char *map, int *result, int *onemore)
 {
@@ -79,7 +79,7 @@ static int	ft_change_stars(char **map, int *result, int *j)
 	return (i);
 }
 
-void	ft_fill_map(char **map, t_tetri *tabtetri)
+void		ft_fill_map(char **map, t_tetri *tabtetri)
 {
 	int		i;
 	int		j;
@@ -96,7 +96,7 @@ void	ft_fill_map(char **map, t_tetri *tabtetri)
 		ft_change_stars(map, &result, &j);
 		if (result == SUCCESS)
 		{
-			tabtetri[j].decaltetri = onemore;//
+			tabtetri[j].decaltetri = onemore;
 			onemore = 0;
 			j++;
 		}
@@ -106,6 +106,3 @@ void	ft_fill_map(char **map, t_tetri *tabtetri)
 			onemore++;
 	}
 }
-
-//Quand j'ai un tetri qui rentre pas, je reviens sur le tetri precedent et je le replace en le decalant de un. Je fais ca jusqua ce que le tetri d'apres rentre ou que ce tetri arrive au '\0'. Si le tetri arrive au '\0' je passe au tetri encore d'avant. Si le premier tetri arrive au '\0' j'aggrandi la map.
-

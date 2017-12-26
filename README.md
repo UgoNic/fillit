@@ -1,3 +1,0 @@
-# fillit
-
-[![Build Status](https://travis-ci.org/UgoNic/fillit.svg?branch=master)](https://travis-ci.org/UgoNic/fillit)

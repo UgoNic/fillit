@@ -6,7 +6,7 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/28 15:14:22 by jjaniec           #+#    #+#             */
-/*   Updated: 2017/12/24 17:10:05 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/26 15:42:01 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,7 @@ int				ft_fillit_sqrt(int n);
 int				ft_pass_tests(char *file_content);
 
 int				ft_print_usage(void);
+
+int				ft_check_tetri_len(char *s);
 
 #endif
