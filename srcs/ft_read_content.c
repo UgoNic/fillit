@@ -6,7 +6,7 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/28 15:16:18 by jjaniec           #+#    #+#             */
-/*   Updated: 2017/12/26 11:25:06 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/26 14:13:50 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ char	*ft_read_content(int fd)
 	buf = (char *)malloc(sizeof(char) * BUFF_SIZE + 1);
 	x = read(fd, buf, BUFF_SIZE);
 	buf[x] ='\0';
+	printf("buf[0]: |%c|, x: %d\n", buf[0], x);
 	if (x < BUFF_SIZE)
 		return (buf);
 	while (x > 0)
