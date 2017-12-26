@@ -6,7 +6,7 @@
 #    By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/20 20:31:14 by jjaniec           #+#    #+#              #
-#    Updated: 2017/12/20 20:38:13 by jjaniec          ###   ########.fr        #
+#    Updated: 2017/12/26 10:57:43 by unicolai         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,9 +52,6 @@ $(NAME) : $(OBJ) map
 $(OBJ_DIR)%.o : $(SRC_DIR)%.c
 	@mkdir -p $(OBJ_DIR)
 	gcc $(CFLAGS) -c $(IFLAGS) $^ -o $@
-
-map:
-	./map_generator $(T_COUNT)
 
 clean:
 	rm -f $(OBJ)

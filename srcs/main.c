@@ -6,7 +6,7 @@
 /*   By: unicolai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/29 23:09:37 by unicolai          #+#    #+#             */
-/*   Updated: 2017/12/25 21:29:13 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/26 12:16:25 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ int		main(int ac, char **av)
 {
 	int		fd;
 	char	*s;
-	t_tetri		*tab;
-	char 	*map;
+	t_tetri	*tab;
+	char	*map;
 
 	if (ac != 2)
 		return (ft_print_usage());
@@ -31,4 +31,3 @@ int		main(int ac, char **av)
 	ft_putstr(map);
 	return (0);
 }
-

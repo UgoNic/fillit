@@ -6,7 +6,7 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/28 15:16:18 by jjaniec           #+#    #+#             */
-/*   Updated: 2017/12/25 17:55:13 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/26 11:25:06 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ char	*ft_resize_buf(int fd, char *buf, int *bufsize_multiplier, int *wrote)
 	*bufsize_multiplier += 1;
 	return (ft_strjoin(buf, buf2));
 }
-
 
 char	*ft_read_content(int fd)
 {
