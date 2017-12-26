@@ -6,7 +6,7 @@
 /*   By: unicolai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/29 23:09:37 by unicolai          #+#    #+#             */
-/*   Updated: 2017/12/26 14:15:26 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/26 15:37:10 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,9 @@ int		main(int ac, char **av)
 	if (ac != 2)
 		return (ft_print_usage());
 	fd = open(av[1], O_RDONLY);
-	printf("fd: %d\n", fd);
 	s = ft_read_content(fd);
+	if (ft_check_tetri_len(s) == 1)
+		return (1);
 	if (ft_pass_tests(s) == 1)
 		return (1);
 	ft_distribute_tetriminos(&tab, s);

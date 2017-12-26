@@ -6,7 +6,7 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/20 19:24:17 by jjaniec           #+#    #+#             */
-/*   Updated: 2017/12/26 12:11:28 by unicolai         ###   ########.fr       */
+/*   Updated: 2017/12/26 15:11:32 by unicolai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,17 +24,14 @@ int		ft_pass_tests(char *file_content)
 	i = ft_count_tetris(file_content);
 	if (i > 26 || ((int)ft_strlen(file_content) != (20 + (21 * (i - 1)))))
 		r = 1;
-	while (j != i && r != 1)
+	while (j <= i && r != 1)
 	{
 		t_tmp = ft_parse_tetri(file_content, j);
 		if (ft_errordot(t_tmp) == 1 || ft_errorhashtag(t_tmp) == 1)
-		{
 			r = 1;
-			return (r);
-		}
 		j++;
 	}
-	if (r)
-		write(1, "error", 5);
+	if (r == 1)
+		write(1, "error\n", 6);
 	return (r);
 }
