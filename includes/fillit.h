@@ -6,7 +6,7 @@
 /*   By: jjaniec <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/28 15:14:22 by jjaniec           #+#    #+#             */
-/*   Updated: 2018/01/04 14:36:52 by jjaniec          ###   ########.fr       */
+/*   Updated: 2018/01/04 16:22:55 by jjaniec          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 # include <strings.h>
 # include "../libft/libft.h"
 
-# define BUFF_SIZE 21
 # define SUCCESS 0
 # define ERROR 1
 
