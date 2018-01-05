@@ -19,7 +19,6 @@
 # include <strings.h>
 # include "../libft/libft.h"
 
-# define BUFF_SIZE 21
 # define SUCCESS 0
 # define ERROR 1
 
